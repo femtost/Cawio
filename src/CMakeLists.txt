@@ -36,6 +36,7 @@ set_target_properties(appsrc PROPERTIES
 
 target_link_libraries(appsrc
     PRIVATE Qt6::Quick
+    Qt6::WebEngineQuick
 )
 
 install(TARGETS appsrc

@@ -1,9 +1,23 @@
 import QtQuick
 import QtQuick.Layouts
 import QtQuick.Controls.Basic
-
+import QtQuick
+import QtQuick.Controls
+import QtWebEngine
 
 ApplicationWindow {
+    visible: true
+    width: 1000
+    height: 700
+    title: "My Browser"
+
+    WebEngineView {
+        anchors.fill: parent
+        url: "https://www.google.com"
+    }
+}
+
+/*ApplicationWindow {
     id: window
     width: 640
     height: 480
@@ -87,4 +101,4 @@ ApplicationWindow {
         }
     }
 
-}
+}*/
